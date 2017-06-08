@@ -1,1 +1,3 @@
-DirectoryIndex spindex6.html
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteRule ^(.*)index.html$ http://utilian.xyz/$1 [R=301,L]
